@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-<foreignObject>
-<body xmlns="http://www.w3.org/1999/xhtml">
-<button x="100" y="100" text-anchor="middle" onclick="alert(document.domain)">Click</button>
-</body>
-</foreignObject>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+  <foreignObject width="500" height="500">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <button onclick="alert(document.domain)">Click me</button>
+    </body>
+  </foreignObject>
 </svg>
