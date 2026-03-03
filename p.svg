@@ -1,0 +1,5 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <a href="javascript:alert('XSS')">
+    <text x="50" y="50" text-anchor="middle">Click me</text>
+  </a>
+</svg>
