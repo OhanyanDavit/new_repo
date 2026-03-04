@@ -1,0 +1,16 @@
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <script type="text/javascript">
+    <![CDATA[
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://webhook.site/0b8f3537-c76f-4562-8c05-014fcdb9c621', true);
+      xhr.send();
+      
+      console.log('Запрос отправлен!');
+    ]]>
+  </script>
+  
+  <circle cx="100" cy="100" r="80" fill="blue" />
+  
+  <text x="50" y="120" fill="white">SVG с запросом</text>
+</svg>
