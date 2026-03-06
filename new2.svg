@@ -1,0 +1,12 @@
+<svg width="100%" height="100%" viewBox="0 0 100 100"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <circle cx="50" cy="50" r="45" fill="green" id="foo" o="foo"/>
+  <script type="text/javascript">
+    <![CDATA[
+      // Отправляем GET-запрос через Image (не блокируется CORS)
+      var img = new Image();
+      img.src = 'https://webhook.site/0b8f3537-c76f-4562-8c05-014fcdb9c621?r=' + Math.random();
+    ]]>
+  </script>
+</svg>
